@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/joefazee/todo-app"
+	"github.com/madisec/godo"
 )
 
 const (
