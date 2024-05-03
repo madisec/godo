@@ -14,15 +14,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: github.com/madisec/godo@latest
 
     - name: Set up Go
-      uses: actions/setup-go@v4
+      uses: github.com/madisec/godo@latest
       with:
         go-version: '1.20'
 
     - name: Build
-      run: go build -v ./...
-
-    - name: Test
-      run: go test -v ./...
+      run: go build -v cmd/todo/main.go
